@@ -85,3 +85,15 @@ Route::post('/loja/editar', 'LojaController@update');
 Route::post('/loja/saveall', 'LojaController@saveall');
 
 
+Route::get('/galeria/{image}', 'OpenController@getimage');
+Route::get('/capa/{image}', 'OpenController@getcapa');
+Route::get('/icone/{image}', 'OpenController@geticone');
+
+Route::get('/pics/getbyitem/{id}', 'OpenController@getbyitem')->where('id','[0-9]+');
+Route::get('/pics/getbyname/{image}', 'OpenController@getbyname');
+Route::get('/pics/getbyid/{image}', 'OpenController@getbyid');
+Route::get('/v1/frete/{token}/{cep}', 'ApiController@getfrete');
+
+
+
+
