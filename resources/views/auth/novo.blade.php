@@ -82,7 +82,7 @@
                  <div class="form-group row">
                     <label for="username" class="col-sm-1 col-form-label">Usuário</label>
                     <div class="col-sm-2">
-                      <input type="text" name="username" id="username" class="form-control" required value="{{old('username')}}">
+                      <input type="text" name="username" id="username" class="form-control" value="{{old('username')}}">
                     </div>
                     
                    <label for="email" class="col-sm-1 col-form-label">Email</label>

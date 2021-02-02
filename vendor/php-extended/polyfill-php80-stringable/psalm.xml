@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<psalm
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    
+    errorLevel="6"
+    reportMixedIssues="true"
+    totallyTyped="true"
+    resolveFromConfigFile="true"
+    useDocblockTypes="true"
+    useDocblockPropertyTypes="true"
+    usePhpDocMethodsWithoutMagicCall="true"
+    usePhpDocPropertiesWithoutMagicCall="true"
+    strictBinaryOperands="true"
+    rememberPropertyAssignmentsAfterCall="true"
+    allowPhpStormGenerics="false"
+    allowStringToStandInForClass="true"
+    memoizeMethodCallResults="true"
+    hoistConstants="false"
+    addParamDefaultToDocblockType="false"
+    checkForThrowsDocblock="true"
+    checkForThrowsInGlobalScope="true"
+    ignoreInternalFunctionFalseReturn="false"
+    ignoreInternalFunctionNullReturn="false"
+    findUnusedVariablesAndParams="true"
+    findUnusedCode="true"
+    findUnusedPsalmSuppress="true"
+    loadXdebugStub="true"
+    ensureArrayStringOffsetsExist="true"
+    ensureArrayIntOffsetsExist="true"
+    skipChecksOnUnresolvableIncludes="false"
+    sealAllMethods="true"
+    
+    forbidEcho="true"
+    
+    throwExceptionOnError="false"
+    hideExternalErrors="true"
+    allowFileIncludes="true"
+>
+    <!-- https://psalm.dev -->
+    <!-- error levels (1-8)    : https://psalm.dev/docs/running_psalm/error_levels/ -->
+    <!-- configuration options : https://psalm.dev/docs/running_psalm/configuration/ -->
+    <projectFiles>
+        <directory name="./src" />
+    </projectFiles>
+    <issueHandlers>
+        <!-- Suppress PossiblyUnusedMethod : we are writing libraries -->
+        <PossiblyUnusedMethod errorLevel="suppress" />
+        <!-- Suppress PossiblyUnusedParam : we are writing libraries -->
+        <PossiblyUnusedParam errorLevel="suppress" />
+        <!-- Suppress PossiblyUnusedProperty : we are writing libraries -->
+        <PossiblyUnusedProperty errorLevel="suppress" />
+        <!-- Suppress RedundantCastGivenDocblockType : we cant be sure if dockblock is enforced -->
+        <RedundantCastGivenDocblockType errorLevel="suppress" />
+        <!-- Suppress RedundantConditionGivenDocblockType : we cant be sure if dockblock is enforced -->
+        <RedundantConditionGivenDocblockType errorLevel="suppress" />
+        <!-- Suppress UnnecessaryVarAnnotation : to have eclipse code completion -->
+        <UnnecessaryVarAnnotation errorLevel="suppress" />
+        <!-- Suppress UnusedClass : we are writing libraries -->
+        <UnusedClass errorLevel="suppress" />
+    </issueHandlers>
+</psalm>

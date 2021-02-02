@@ -25,7 +25,6 @@ class UsuariosRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:100',
-            'username' => 'required|string|max:20:unique:usuarios',
             'email' => 'required|string|email|max:255|unique:usuarios,email,' . $this->ignoreemail . ',email',
             'password' => 'confirmed',
             'uf' => 'required|max:2',

@@ -85,14 +85,24 @@ Route::post('/loja/editar', 'LojaController@update');
 Route::post('/loja/saveall', 'LojaController@saveall');
 
 
+Route::get('/compras', 'OpenController@compras');
+
 Route::get('/galeria/{image}', 'OpenController@getimage');
 Route::get('/capa/{image}', 'OpenController@getcapa');
 Route::get('/icone/{image}', 'OpenController@geticone');
 
+
+//Conf API
 Route::get('/pics/getbyitem/{id}', 'OpenController@getbyitem')->where('id','[0-9]+');
 Route::get('/pics/getbyname/{image}', 'OpenController@getbyname');
 Route::get('/pics/getbyid/{image}', 'OpenController@getbyid');
+
 Route::get('/v1/frete/{token}/{cep}', 'ApiController@getfrete');
+
+
+Route::post('v1/paypal/{id}', 'PayPalController@payWithpaypal')->where('id','[0-9]+');
+Route::get('/v1/paypal/status/{id}', 'PayPalController@getPaymentStatus');
+Route::any('/v1/paywithpaypal/{id}', 'PayPalController@payWithpaypal')->where('id','[0-9]+');
 
 
 
