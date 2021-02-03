@@ -28,6 +28,11 @@ Route::post('usuarios/editar', 'UsuariosController@update');
 Route::get('usuarios/remove/{id}', 'UsuariosController@remove')->where('id','[0-9]+');
 
 
+Route::get('transacoes', 'TransacoesController@index');
+Route::get('transacoes/itens/{id}', 'TransacoesController@itens')->where('id','[0-9]+');
+
+
+
 Route::get('cadastros/produtos', 'ProdutosController@index');
 Route::get('cadastros/produtos/novo', 'ProdutosController@novo');
 Route::post('cadastros/produtos/novo', 'ProdutosController@insert');
@@ -98,6 +103,7 @@ Route::get('/pics/getbyname/{image}', 'OpenController@getbyname');
 Route::get('/pics/getbyid/{image}', 'OpenController@getbyid');
 
 Route::get('/v1/frete/{token}/{cep}', 'ApiController@getfrete');
+Route::get('/v1/cep/{token}/{cep}', 'ApiController@getcep');
 
 
 Route::post('v1/paypal/{id}', 'PayPalController@payWithpaypal')->where('id','[0-9]+');

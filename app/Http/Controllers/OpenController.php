@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\PlataformasRequest;
+
 class OpenController extends ControllerOpen
 {
  
@@ -45,6 +46,7 @@ class OpenController extends ControllerOpen
     function compras(){
         return redirect()->away("http://127.0.0.1:8000/compras");
     }
+ 
         
     
 }

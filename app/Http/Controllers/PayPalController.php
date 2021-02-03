@@ -247,12 +247,12 @@ class PayPalController extends Controller
                
            $trans_item = DB::table('transacoes_itens')
                     ->select('id_produto')
-                    ->where(['transacoes.id'=>$id])
+                    ->where(['id_trans'=>$id])
                     ->get();
             foreach($trans_item as $tran){
                 
                    
-                    DB::update("UPDATE loja SET demanda=demanda-1 where idproduto=" . $tran->id_produto . " and idempresa=" . $trans[0].idempresa);
+                    DB::update("UPDATE loja SET demanda=demanda-1 where idproduto=" . $tran->id_produto . " and idempresa=" . $trans[0]->idempresa);
                     
                
             }

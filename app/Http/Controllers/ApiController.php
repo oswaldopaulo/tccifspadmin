@@ -6,10 +6,40 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\DB;
 use FlyingLuscas\Correios\Client;
 use FlyingLuscas\Correios\Service;
+use Canducci\ZipCode\Facades\ZipCode;
+use Canducci\ZipCode\ZipCodeException;
+
 class ApiController extends ControllerOpen
 {
  
     
+       
+    function getcep($token, $cep){
+        
+        $empresa = DB::table('empresas')->where(['token'=>$token])->get();
+        
+        if(!isset($empresa[0])){
+            $resultado['erro']="token invalido";
+            return response()->json($resultado);
+        } 
+        
+        
+        try{
+            $r = ZipCode::find($cep);
+        }catch(ZipCodeException $e){
+             $resultado['erro']="cep invalido";
+            return response()->json($resultado);
+        }
+        
+        
+        
+        if($r){
+             return response()->json($r->getArray());
+        } else {
+            $resultado['erro']="cep invalido";
+            return response()->json($resultado);
+        }
+    }
     
     function getfrete($token, $cep){
         
