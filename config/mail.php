@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.ebras.com.br',
+    'host' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'oswaldopaulo@ebras.com.br',
+        'address' => '',
         'name' => 'No Reply',
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'oswaldopaulo@ebras.com.br',
+    'username' => '',
 
-    'password' => 'ocarina2@@2',
+    'password' => '',
 
     /*
     |--------------------------------------------------------------------------
