@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="File.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="FilesystemException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="NotSupportedException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="SafeStorage.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="ConnectionRuntimeException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="RootViolationException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="UnreadableFileException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="PluginInterface.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="FilesystemNotFoundException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="Directory.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="Filesystem.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="AdapterInterface.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="Exception.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="ConfigAwareTrait.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="ConnectionErrorException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="FilesystemInterface.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="Handler.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="InvalidRootException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="Config.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="ReadInterface.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="Util.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="MountManager.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="FileNotFoundException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+<file name="FileExistsException.php" server="litegroup.com.br/www/tccifsp/" local="132542402840000000" remote="132542402840000000" Dst="0" />
+</dwsync>
