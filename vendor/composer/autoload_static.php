@@ -27,10 +27,10 @@ class ComposerStaticInit1cc34fdde4fd41bbbb22a360917f0637
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
-        'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
-        '17d016dc52a631c1e74d2eb8fdd57342' => __DIR__ . '/..' . '/laravel/helpers/src/helpers.php',
         'fbba6665cebd3b896bcd18f0e4325390' => __DIR__ . '/..' . '/canducci/zipcode/src/Canducci/ZipCode/ZipCodeHelper.php',
         'fc3274aac27aab5fc3d13568be2dc802' => __DIR__ . '/..' . '/canducci/zipcode/src/Canducci/ZipCode/ZipCodeAddressHelper.php',
+        'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        '17d016dc52a631c1e74d2eb8fdd57342' => __DIR__ . '/..' . '/laravel/helpers/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
